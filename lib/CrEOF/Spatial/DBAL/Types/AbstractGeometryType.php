@@ -40,6 +40,7 @@ abstract class AbstractGeometryType extends Type
 {
     const PLATFORM_MYSQL = 'MySql';
     const PLATFORM_POSTGRESQL = 'PostgreSql';
+    const PLATFORM_SQLITE = 'SQLite';
 
     /**
      * @return string
