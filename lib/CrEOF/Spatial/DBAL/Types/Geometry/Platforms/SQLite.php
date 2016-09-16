@@ -33,7 +33,7 @@ class SQLite extends AbstractPlatform
      */
     public function convertToPHPValueSQL($sqlExpr)
     {
-        return sprintf('AsBinary(%s)', $sqlExpr);
+        return $sqlExpr;
     }
 
     /**
@@ -41,6 +41,6 @@ class SQLite extends AbstractPlatform
      */
     public function convertToDatabaseValueSQL($sqlExpr)
     {
-        return sprintf('GeomFromText(%s)', $sqlExpr);
+        return $sqlExpr;
     }
 }
